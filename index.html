@@ -14,12 +14,13 @@
   <!-- шапка сайта -->
   <header>
     <div id="logo">
-      <a href="#main" onclick="slowScroll('#main')" title="логотип"> AlexFom</a>
+      <a href="#main" onclick="slowScroll('#main')" title="логотип"> AlexFom View</a>
     </div>
     <div id="navigate">
       <a href="#aboutMe" onclick="slowScroll('#aboutMe')" title="Обо мне">Обо мне</a>
       <a href="#softHard" onclick="slowScroll('#softHard')" title="Soft и Hard скиллы">Soft и Hard
         скиллы</a>
+      <a href="#resume" onclick="slowScroll('#resume')" title="Работы">Работы</a>
       <a href="#contacts" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
     </div>
     <!--анимация перемещения при помощи библиотеки jqaery-->
@@ -37,30 +38,61 @@
       });
     </script>
   </header>
+
   <!--текст главного блока-->
   <div id="main">
-    <p class="">Заголовок текста</p>
-    <span class="ots">Текст такой не плохой
-      <br>красивый понятный молодой
-    </span>
+    <div id="mainText">
+      Обзор учебных проектов
+      <div class="myName"> <br> <img class="copy" src="copyright.png" alt="знак копирайта"> Алексей Андреевич</div>
+    </div>
   </div>
+
   <!--текст блока обо мне-->
   <div id="aboutMe">
-    <div class="backFoto">бэкфото</div>
     <img class="fotoMe" src="man.png" alt="фото">
 
     <div class="aboutMain">
-      <h1>Заголовок текста</h1>
-      <span>Текст такой не плохой
-        <br>красивый понятный молодой
-      </span>
+      <div class="aboutMainText">Информация обо мне</div>
+      <p class="aboutMainCenter">
+        Меня зовут Алексей, я Junior разработчик.
+        Моё изучение началось с html и css, это самый первый сайт, который я написал. После того, как я стал понимать
+        данные языки я стал учить JavaScript при помощи Youtube и наращивать базу
+        знаний, далее прочёл книгу Этана Брауна "Изучаем JavaScript". Естественно на этом я не успокоился и стал изучать
+        PHP далее фреймворки Yii и React. Плодами моих познаний и стали сайт который вы видите, а также список, к
+        которому можно перейти при нажатии в шапке сайта.
+      </p>
     </div>
   </div>
 
   <!--текст блока о скиллах-->
   <div id="softHard">
-    <p>Сфпфпфп</p>
+    <div class="soft">
+      <div class="hard">
+        <div class="hardH1">
+          <h2>Мои Hard скиллы</h2>
+          <ul>
+            <p>Первый</p>
+            <p>Первый</p>
+            <p>Первый</p>
+          </ul>
+          <div class="softH1">
+            <h2>Мои Soft скиллы</h2>
+            <ul>
+              <p>Первый</p>
+              <p>Первый</p>
+              <p>Первый</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!--Работы-->
+  <div id="resume">
+    <p>мои работы</p>
+  </div>
+
   <!--текст блока обо мне-->
   <div id="contacts">
     <p>Сфпфпфп</p>
